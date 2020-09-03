@@ -1,0 +1,44 @@
+/* -------------------------- */
+/*** Body ***/
+body {
+    background-color: darkred;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* -------------------------- */
+/*** Grid ***/
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.25fr 0.25fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+        ". logoImg companyName companyName ."
+        ". navMenu navMenu navMenu ."
+        ". foodCourses foodCourses foodCourses .";
+}
+
+.logoImg {
+    grid-area: logoImg;
+    background-color: aqua;
+}
+
+.companyName {
+    grid-area: companyName;
+    background-color: azure;
+}
+
+.navMenu {
+    grid-area: navMenu;
+    background-color: aquamarine;
+}
+
+.foodCourses {
+    grid-area: foodCourses;
+    background-color: hotpink;
+}
+
+/* -------------------------- */
